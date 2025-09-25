@@ -21,7 +21,7 @@ from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
 # Handlers
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("Hello! I am Jason bot. Type /help to see what I can do.")
+    await update.message.reply_text("Hello! I am Jason's  bot. Type /help to see what I can do.")
 
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
@@ -45,24 +45,24 @@ def main():
     # Create scheduler with explicit pytz timezone
     scheduler = AsyncIOScheduler(timezone=pytz.UTC)
 
-    # Api token
+    #creates app and passes bot token
     app = (
         ApplicationBuilder()
-        .token("8091291394:AAE5lKdrJAz0132FWPPGNqsXaZzS74VxwAU")
+        .token("removed for privacy")
         
         .build()
     )
 
-    # Add handlers
+    #handlers
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CommandHandler("help", help_command))
     app.add_handler(CommandHandler("linkedin", linkedin))
     app.add_handler(CommandHandler("github", github))
     app.add_handler(CommandHandler("gmail", gmail))
 
-    #start the scheduler
+    #start polling updates from tele
     app.run_polling()
 
-# Program Entry
+# program Entry
 if __name__ == '__main__':
     main()
