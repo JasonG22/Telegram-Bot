@@ -1,4 +1,7 @@
-Jason bot is a simple telegram bot in python that uses the python-telegram library. It  provides links to various socials such as Linkedin, github, email
+Jason bot is a simple telegram bot in python that uses the python-telegram library. 
+
+It  provides links to my various socials such as Linkedin, github, email
+
 Link to see how it works https://youtube.com/shorts/3THS7URXsSY?feature=share
 
 I setup the bot using Telegrams API bot token.
